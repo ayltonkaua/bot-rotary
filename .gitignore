@@ -1,0 +1,12 @@
+# Dependências do Node
+node_modules/
+
+# Arquivo de sessão do Baileys - NÃO ENVIE ISSO!
+auth/
+
+# Arquivo de variáveis de ambiente - NÃO ENVIE ISSO!
+.env
+
+# Logs e arquivos de depuração
+npm-debug.log
+*.log
