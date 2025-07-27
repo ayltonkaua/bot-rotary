@@ -128,9 +128,9 @@ function startApiServer(sock) {
 
       const dataFormatada = new Date(dataFalta).toLocaleDateString('pt-BR', { timeZone: 'UTC' });
       const templates = [
-        `Olá, ${aluno.nome_responsavel}. Informamos que o(a) aluno(a) ${aluno.nome} não compareceu à aula no dia ${dataFormatada}.`,
+        `Olá, ${aluno.nome_responsavel}. Informamos que o(a) aluno(a) ${aluno.nome} não compareceu à escola no dia ${dataFormatada}.`,
         `Prezado(a) ${aluno.nome_responsavel}, detectamos ausência do(a) estudante ${aluno.nome} na data de ${dataFormatada}.`,
-        `Atenção, ${aluno.nome_responsavel}. O(a) aluno(a) ${aluno.nome} faltou no dia ${dataFormatada}. Em caso de dúvidas, contate a escola.`
+        `Atenção, ${aluno.nome_responsavel}. O(a) aluno(a) ${aluno.nome} faltou no dia ${dataFormatada}. Caso queira justificar, contate a secretaria da escola.`
       ];
 
       const mensagem = templates[Math.floor(Math.random() * templates.length)];
