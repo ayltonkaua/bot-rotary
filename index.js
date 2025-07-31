@@ -119,7 +119,7 @@ function startApiServer(sock) {
       const templates = [
         `Olá, ${aluno.nome_responsavel}. Informamos que o(a) aluno(a) ${aluno.nome} não compareceu à escola no dia ${dataFormatada}.`,
         `Prezado(a) ${aluno.nome_responsavel}, detectamos ausência do(a) estudante ${aluno.nome} na data de ${dataFormatada}.`,
-        `Atenção, ${aluno.nome_responsavel}. O(a) aluno(a) ${aluno.nome} faltou no dia ${dataFormatada}. Caso queira justificar, contate a secretaria da escola.`
+        `Atenção, ${aluno.nome_responsavel}. O(a) aluno(a) ${aluno.nome} faltou no dia ${dataFormatada}.`
       ];
 
       const mensagem = templates[Math.floor(Math.random() * templates.length)];
@@ -165,9 +165,9 @@ function startApiServer(sock) {
       }
 
       const templates = [
-        `Olá, ${aluno.nome_responsavel}! Você foi cadastrado(a) como responsável pelo(a) aluno(a) ${aluno.nome} em nosso sistema de comunicação escolar.`,
-        `Prezado(a) ${aluno.nome_responsavel}, este é um contato da escola. Confirmamos seu cadastro como responsável pelo(a) estudante ${aluno.nome}. Seja bem-vindo(a)!`,
-        `Bem-vindo(a), ${aluno.nome_responsavel}! Seu número foi registrado para receber comunicados sobre o(a) aluno(a) ${aluno.nome}.`
+        `Olá, ${aluno.nome_responsavel}! Somos da Escola Rotary do Alto do do Pascoal, e você foi cadastrado(a) como responsável pelo(a) aluno(a) ${aluno.nome} em nosso sistema de comunicação escolar.`,
+        `Prezado(a) ${aluno.nome_responsavel}. Somos da Escola Rotary do Alto do Pascoal este é um contato da escola. Confirmamos seu cadastro como responsável pelo(a) estudante ${aluno.nome}. Seja bem-vindo(a)!`,
+        `Bem-vindo(a), ${aluno.nome_responsavel}! Somos da Escola Rotary do Alto do Pascoal, seu número foi registrado para receber comunicados sobre o(a) aluno(a) ${aluno.nome}.`
       ];
       
       const mensagem = templates[Math.floor(Math.random() * templates.length)];
